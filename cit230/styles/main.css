@@ -1,0 +1,77 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: sans-serif/* Ubuntu, sans-serif */;
+    color: black /* #xxxxxx */;
+    background-color: antiquewhite;    
+}
+
+h1 {
+    font-size: 3rem /* x.xrem  (rem is a unit of measure) */;
+    text-align: center;
+    color: white/* #xxxxxx */;
+}
+
+h2 {
+    font-size: 2rem /* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+h3 {
+    font-size: 2rem /* x.xrem */;
+    text-align: inherit;
+    border-bottom: 1px solid #bbb;
+    }
+
+h4 {
+    font-size: 2rem /* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+nav {
+    background-color: darkgray;
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 1rem auto
+}
+nav a:link {color:aliceblue;}
+nav a:visited {color:black;}
+nav a:focus {color:grey;}
+nav a:hover {color:grey;}
+
+header, main, footer, nav {
+    margin: 1.5em auto;
+    padding: .5rem;
+    max-width: 2000px; /* xxxpx (px = pixel is a unit of measure)  */
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: dimgray;
+    color: whitesmoke;
+}
+
+header img {
+    width: 200px /*  */;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: smaller;
+}
+
+
