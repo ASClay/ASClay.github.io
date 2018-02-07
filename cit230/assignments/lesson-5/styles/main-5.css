@@ -113,6 +113,8 @@ section table {
     background-color: grey;
 }
 
+section.forecast { display:none; } 
+
 article {
     width: 80%;
     background-color: antiquewhite;

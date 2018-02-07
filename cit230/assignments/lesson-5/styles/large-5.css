@@ -1,6 +1,8 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
+    section.forecast { display:inline-block; } 
+    
   article p.town-article img { 
     max-width: 20%; /* fill the page in the small/phone view */
     height: auto;
