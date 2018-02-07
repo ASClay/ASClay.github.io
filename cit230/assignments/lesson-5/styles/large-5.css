@@ -2,7 +2,7 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
     }
-    forecast {
+    .forecast {
         display: flex;
         flex-flow: column;
         background-color: gray;
