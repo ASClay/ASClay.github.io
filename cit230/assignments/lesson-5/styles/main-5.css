@@ -1,0 +1,159 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: serif;/* Declare the base font-family - from google font api or other */
+    background-color: black;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1.5em auto;
+    padding: .5rem;
+    max-width: 2000px;
+}
+
+header {
+    background-color: darkblue;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    ;
+   }
+header img {
+    width: 150px;
+    height: auto;
+    float: left;
+    padding: .5px;
+    box-shadow: 2px 2px 4px #aaa;
+    margin-right: -100%;
+    margin-bottom: -100%;
+}
+header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    margin-left: -5px;
+    color: white;
+    text-align: center;
+}
+header .subheading {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: lightblue;
+    text-align: center;
+    align-content: center;
+    width: 40%;
+        
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightskyblue;
+}
+nav ul li {
+    float: left;
+    border-right: 1px solid;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: darkblue;
+}
+nav ul li a:hover {
+    background-color:black;
+}
+
+main {
+    background-color: lightgrey;
+}
+main h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section {
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section picture img {
+    float: right;
+    margin-right: 35%;
+    margin-left: -45%;
+    margin-top: -5%;
+}
+
+section table {
+    margin-left: auto;
+    margin-right: auto;
+    color: orange;
+    background-color: grey;
+}
+
+article {
+    width: 80%;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+}
+article h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+article p.town-article {
+    background-color: antiquewhite;
+    overflow: auto;
+    font-size: 1.5rem;
+}
+article p.town-article img {  
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    max-width: 10%; /* fill the page in the small/phone view */
+    height: auto;
+    float: left;
+    margin: 0px 0px 15px 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    
+}
+footer aside {
+    text-align: center;
+    font-size: 2rem;
+}
+footer>p {
+    text-align: center;
+    font-size: 1rem;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+
+
