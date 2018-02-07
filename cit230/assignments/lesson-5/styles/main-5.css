@@ -113,7 +113,7 @@ section table {
     background-color: grey;
 }
 
-section.forecast { display:inline-block; } 
+section.forecast { display:none; } 
 
 article {
     width: 80%;
