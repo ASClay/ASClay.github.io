@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin County Weather | Tri-County Weather</title>
+    <meta name="author" content="Alan Clay">
+    <meta name="description" content="Franklin Weather">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel Decorative" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+</head>
+    
+<body onload="currentdate()">
+  <header>
+    <img src="images/logo.jpg" alt="The site logo">
+    <h1>Tri-County Weather</h1>
+    <div class="sub">Weather and News you can rely on!</div>
+      
+  </header>
+   
+ <!-- site navigation use placeholder references -->
+  <nav class="nav">
+      <button class="button">Menu</button>
+     <div class="navigation">
+    	<a href="/cit230/index.html">Home</a>
+    	<a href="/assignments/lesson-7/franklin-7.html">Franklin</a>
+    	<a href="#">Greenville</a>
+    	<a href="#">Springfield</a>
+    	<a href="#">Storm Center</a>
+    	<a href="/assignments/lesson-7/gallery-7.html">Gallery</a>        
+    </div>	
+      
+      <div class="nav2">
+     <ul class="navigation2">
+    	<li><a href="/cit230/index.html">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+        
+    </ul>		
+  </div>
+  </nav>
+    
+
+    <main>
+    <h2>The City of Franklin</h2>
+    <figure>
+      <img src="images/franklin-original.jpeg" alt="franklin skyline" sizes="50vw"
+              srcset="images/franklin-original-assets/franklin250.jpg 200w,  
+                      images/franklin-original-assets/franklin500.jpg 500w,
+                      images/franklin-original-assets/franklin1000.jpg 1000w">
+    </figure>
+    <div class="summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High: 90°F</p>  
+        <p>Low: 66°F</p>  
+      </div>
+        </div>
+        <div class="current">
+         Sunny
+            <br>
+        <picture>
+            <img src="images/sunny.jpg" alt="sun icon">
+        </picture>
+        </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p><br>
+
+        
+    <div class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </div>
+      
+    <article>
+      <h3>Franklin's Corn Harvests Break Records</h3>	
+      <p class="town-article">
+        <img src="images/corn_crop-assets/corn500.jpg" alt="corn harvest" sizes="30vw"
+              srcset="images/corn_crop-assets/corn250.jpg 200w,  
+                      images/corn_crop-assets/corn500.jpg 500w">
+        With more than 90% of the state's corn crop harvested as of Monday, the University of Missouri Variety Testing Program reports yields far exceeding national averages.
+      </p>
+		</article>		  
+  
+  </main>
+  <footer>
+    <aside>
+      567 Other Ln. | Franklin | MO | 65274 | (777)777-7777
+    </aside>
+    <p class="footer-bar">|&copy;2017 All Rights Reserved | Tri-County Weather | <span id="currentdate" class="container"></span></p>
+  </footer>
+
+
+</body>
+</html>
