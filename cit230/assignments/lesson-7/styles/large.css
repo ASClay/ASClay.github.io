@@ -95,8 +95,6 @@ header .sub {
     margin: auto;
     margin-top: 10px;    
     margin-bottom: 10px;
-    
-
 }
 .one {
   grid-column: 1;
@@ -132,13 +130,6 @@ footer {
     font-size:200%;
     margin: auto;
     text-align: center;
-
-
 }
+    
 .footer-bar {font-size: 80%;}
-  
-
-
-
-
-}
