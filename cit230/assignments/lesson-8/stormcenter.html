@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin County Weather | Tri-County Weather</title>
+    <meta name="author" content="Alan Clay">
+    <meta name="description" content="Franklin Weather">
+    <!-- external style references in the proper cascading order -->    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel Decorative" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+</head>
+    
+<body onload="currentdate()">
+  <header>
+    <img src="images/logo.jpg" alt="The site logo">
+    <h1>Tri-County Weather</h1>
+    <div class="sub">Weather and News you can rely on!</div>
+      
+  </header>
+   
+ <!-- site navigation use placeholder references -->
+  <nav class="nav">
+      <button class="button">Menu</button>
+     <div class="navigation">
+    	<a href="/cit230/index.html">Home</a>
+    	<a href="/cit230/assignments/lesson-8/franklin-8.html">Franklin</a>
+    	<a href="#">Greenville</a>
+    	<a href="#">Springfield</a>
+    	<a href="#">Storm Center</a>
+    	<a href="/cit230/assignments/lesson-8/gallery-8.html">Gallery</a>        
+    </div>	
+      
+      <div class="nav2">
+     <ul class="navigation2">
+    	<li><a href="/cit230/index.html">Home</a></li>
+    	<li class="active"><a href="/cit230/assignments/lesson-8/franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="/cit230/assignments/lesson-8/gallery-8.html">Gallery</a></li>
+        
+    </ul>		
+  </div>
+  </nav>
+    
+
+    <main>
+        
+    <form action="/cit230/assignments/lesson-8/thanks.html" method="get" enctype="multipart/form-data" name="stormreport" id="sr">	
+	<fieldset>
+	<legend>Personal Information</legend>
+	
+	<label>Full Name:<br><input name="name" type="text" value="" pattern="[a-zA-Z -_.]{5,99}" required></label><br>
+	
+    <label>Email:<br><input name="email" type="email" placeholder="janesmith@byu.edu"></label><br>
+	
+    <label>Phone Number:<br><input name="telnum" type="tel" required></label><br>
+	
+    <label>Zip Code:<br><input name="zip" type="number" required></label><br>
+	</fieldset>
+	<fieldset>
+	<legend>Storm Information</legend>
+	
+    <label>Storm Date:<br><input name="date" type="date"></label><br>
+	
+    <label>Storm Type:<br><!-- "Flash Flood", "Hail", "Hurricane", "Thunderstorm", and "Tornado".-->
+	<input type="text" name="stype" list="stype">
+	<datalist id="stype">
+		<option value="Flash Flood"></option>
+		<option value="Hail"></option>
+		<option value="Hurricane"></option>
+		<option value="Thunderstorm"></option>
+		<option value="Tornado"></option>
+	</datalist></label><br>
+	
+		<label for="rating">Storm Severity:1-10</label><br>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+		
+    <label>Storm Region:<br>		
+	<select name="region"><!--"Select Region ..." that is shown by default but not selectable  "Franklin", Greenville, and "Springfield"-->
+		<option value="Select Region..." disabled selected="selected">Select Region...</option>
+		<option value="Franklin">Franklin</option>
+		<option value="Greenville">Greenville</option>
+		<option value="Springfield">Springfield</option>
+	</select></label><br>
+	
+    <label>Are you in Danger?<br><!--yes, no, maybe-->
+		<input type="radio" name="danger" value="Yes" checked> Yes
+		<input type="radio" name="danger" value="No"> No
+		<input type="radio" name="danger" value="Maybe"> Maybe
+		</label><br>
+		
+	<label>Additional Information:<br> <!--text area for comments-->
+		<textarea name="message" rows="10" cols="30"></textarea></label><br>
+	</fieldset>
+	
+	<input type="submit" value="Submit">
+	
+	<input name="redirect" type="hidden" value="thanks.html">
+	
+	</form>
+    
+      </main>
+  <footer>
+    <aside>
+      567 Other Ln. | Franklin | MO | 65274 | (777)777-7777
+    </aside>
+    <p class="footer-bar">|&copy;2017 All Rights Reserved | Tri-County Weather | <span id="currentdate" class="container"></span></p>
+  </footer>
+
+
+</body>
+</html>
