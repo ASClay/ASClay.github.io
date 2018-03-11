@@ -1,0 +1,135 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+header img {
+    width: 14%;
+    margin: 0 0 0 0;
+    }
+    
+header h1 {
+     font-size:3rem;
+}
+header .sub {
+    font-size: 2rem;
+}
+.button {display: none;}
+.nav button {display: none;}
+.navagation{display: none;}
+    .navagation a{display: none;}
+.nav:hover .navigation {
+    display: none;
+}
+
+.nav2 {display: inherit;
+    flex-wrap: nowrap;
+    align-content: center;
+    background-color: lightblue;
+    text-align: center;
+    align-content: center;
+    width: 47%;    
+    margin: auto;
+}    
+
+    .navagation2 {
+        align-content: center;
+        margin: auto;
+    }
+.nav2 ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav2 ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightskyblue;
+}
+.nav2 ul li {
+    float: left;
+    border-right: 1px solid;
+}
+.nav2 ul li:last-child {
+    border-right: none;
+}
+.nav2 ul li.active a {
+    background-color: darkblue;
+}   
+    article {
+        flex-wrap: nowrap;
+        flex: auto;
+        overflow: auto;
+    
+    }
+      .forecast {
+        display: flex;
+        flex-flow: column;
+        background-color: gray;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;       
+    }
+    .forecast table {
+    margin-left: auto;
+    margin-right: auto;
+    color: orange;
+    background-color: grey;
+}
+    
+    /* Gallery Stuff */
+
+.pictures {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: auto;
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+  
+    
+footer {
+    flex: auto;
+    width: 99%;
+    background-color: darkblue;
+    color: white;
+    font-size:200%;
+    margin: auto;
+    text-align: center;
+}
+    
+.footer-bar {font-size: 80%;}
