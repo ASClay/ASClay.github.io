@@ -1,4 +1,4 @@
-header, footer, nav, .nav2, .forecast, article, .summary, .pictures {
+header, footer, nav, .nav2, forecast, article, summary, pictures {
         border: 1px solid black;
         padding: 0.25em;
         margin: 0.25em;
@@ -107,7 +107,19 @@ main {
 main h2{
     font-family: 'Cinzel Decorative', serif;
     font-size:100%;
+    text-align: center;    
+}
+
+main h3{
+    font-family: 'Cinzel Decorative', serif;
+    font-size:100%;
     text-align: center;
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: .25em;
+    
 }
 
 .summary {
@@ -120,7 +132,7 @@ main h2{
     font-size: 150%;
 }
 
-.forecast {display: none;}
+forecast {display: none;}
 
 article {
     -webkit-flex: 5;
@@ -143,7 +155,7 @@ article img {
 
 .pictures {
     display: grid;
-    grid-template-columns: repeat 1fr;
+    grid-template-columns: auto auto;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     margin: auto;

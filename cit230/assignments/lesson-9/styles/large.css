@@ -69,7 +69,7 @@ header .sub {
         overflow: auto;
     
     }
-      .forecast {
+    forecast {
         display: flex;
         flex-flow: column;
         background-color: gray;

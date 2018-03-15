@@ -11,8 +11,7 @@
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-    <script type="text/javascript" src="scripts/currentdate.js"></script>
-    <script type="text/javascript" src="scripts/windchill.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
     
@@ -53,94 +52,36 @@
     
 
     <main>
-        <section>
-        
-        </section>
-        <script>
-            var xmlhttp = new XMLHttpRequest(),
-                json;
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readystate=== 4 && xmlhttp.status === 200){
-                    json = JSON.parse(xmlhttp.responceText);
-                }
-            }
-            
-            xmlhttp.open('GET', 'towndata.json', true);
-            xmlhttp.send();
-            
 
-        </script>
     <figure>
       <img src="images/franklin-original.jpeg" alt="franklin skyline" sizes="50vw"
               srcset="images/franklin-original-assets/franklin250.jpg 200w,  
                       images/franklin-original-assets/franklin500.jpg 500w,
                       images/franklin-original-assets/franklin1000.jpg 1000w">
     </figure>
-    <div class="summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High: 90°F</p>  
-        <p>Low: 66°F</p>  
-      </div>
-        </div>
-        <div class="current">
-         Sunny
-            <br>
-        <picture>
-            <img src="images/sunny.jpg" alt="sun icon">
-        </picture>
-        </div>   
-      <div class="conditions">
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p><br>
-          <p>Find the Wind Chill</p>
-          <p>Temperature: <input type="text" size="3" id="temperature">	Wind Speed:  <input type="text" size="3" id="windspeed"></p>
-	<button type="button" onclick="doInputOutput()">Caculate</button>  <div id="Chill"></div>
-        </div>
+     
+        <article></article>
+        <h2></h2>
         
-    <div class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </div>
-      
-    <article>
-      <h3>Franklin's Corn Harvests Break Records</h3>	
-      <p class="town-article">
-        <img src="images/corn_crop-assets/corn500.jpg" alt="corn harvest" sizes="30vw"
-              srcset="images/corn_crop-assets/corn250.jpg 200w,  
-                      images/corn_crop-assets/corn500.jpg 500w">
-        With more than 90% of the state's corn crop harvested as of Monday, the University of Missouri Variety Testing Program reports yields far exceeding national averages.
-      </p>
-		</article>		  
+
+          <br>  
+ 
+        <forecast>
+        
+
+                        <p><strong>Current Weather:</strong></p>
+                        <p id="weather"></p>
+                        <p><strong>Tempreture:</strong></p>
+                        <p id="temp"></p>
+                        <p><strong>Wind:</strong></p>
+                        <p id="wind"></p>
+                        <p><strong>Forecast:</strong></p>
+                        <p id="forecast"></p>
+
+        
+        </forecast>
+
+    		  
   
   </main>
   <footer>
@@ -149,7 +90,11 @@
     </aside>
     <p class="footer-bar">|&copy;<span id="currentdate" class="container"></span> All Rights Reserved | Tri-County Weather | <span id="currentdate" class="container"></span></p>
   </footer>
-
-
+<script type="text/javascript" src="scripts/townData.js"></script>
+<script type="text/javascript" src="scripts/currentWeather.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
 </html>
