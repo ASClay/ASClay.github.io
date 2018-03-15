@@ -1,3 +1,4 @@
+
     var section = document.querySelector('article');
     var requestURL = 'https://asclay.github.io/cit230/assignments/lesson-9/towndata.json';
     var request = new XMLHttpRequest();

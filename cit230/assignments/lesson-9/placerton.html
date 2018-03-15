@@ -65,21 +65,47 @@
         
 
           <br>  
- 
-        <forecast>
+<forecast>
+<section class="currenttemps">
+            <h3><span id="currentObs">Cloudy</span></h3>
+            <img id="w_icon" src="" alt="current weather">
+            <ul class="currentconditions">
+                <li>Current Temperature: <span id="currentTemp">75</span>&deg;</li><br>
+                <li>Wind: <span id="windSpeed"></span></li><br>
+                <li>Humidity:  <span id="humid"></span></li><br>  
+            </ul>
+            
+        </section>
         
-
-                        <p><strong>Current Weather:</strong></p>
-                        <p id="weather"></p>
-                        <p><strong>Tempreture:</strong></p>
-                        <p id="temp"></p>
-                        <p><strong>Wind:</strong></p>
-                        <p id="wind"></p>
-                        <p><strong>Forecast:</strong></p>
-                        <p id="forecast"></p>
-
-        
-        </forecast>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+                <table>
+	               <thead>
+                      <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                      </tr>
+		          </thead>
+                  <tbody>  
+                      <tr>
+                        <td><span id="forecast1"></span><br>
+                            <img id="w_icon1" src="" alt="forecast weather icon"></td>
+                        <td><span id="forecast2"></span><br>
+                            <img id="w_icon2" src="" alt="forecast weather icon"></td>
+                        <td><span id="forecast3"></span><br>
+                            <img id="w_icon3" src="" alt="forecast weather icon"></td>
+                        <td><span id="forecast4"></span><br>
+                            <img id="w_icon4" src="" alt="forecast weather icon"></td>
+                        <td><span id="forecast5"></span><br>
+                            <img id="w_icon5" src="" alt="forecast weather icon"></td>
+                      </tr>
+		          </tbody>
+                </table>
+        </section>
+</forecast>
 
     		  
   
@@ -91,7 +117,7 @@
     <p class="footer-bar">|&copy;<span id="currentdate" class="container"></span> All Rights Reserved | Tri-County Weather | <span id="currentdate" class="container"></span></p>
   </footer>
 <script type="text/javascript" src="scripts/placer.js"></script>
-<script type="text/javascript" src="scripts/currentWeather.js"></script>
+<script type="text/javascript" src="scripts/placerW.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
     <script type="text/javascript" src="scripts/windchill.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
