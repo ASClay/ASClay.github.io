@@ -72,7 +72,7 @@ header .sub {
     forecast {
         display: flex;
         flex-flow: column;
-        background-color: gray;
+        background-color: ghostwhite;
         width: 80%;
         margin: auto;
         margin-bottom: 10px;       
@@ -81,7 +81,8 @@ header .sub {
     margin-left: auto;
     margin-right: auto;
     color: orange;
-    background-color: grey;
+    background-color: whitesmoke;
+    border-radius: .5rem;
 }
     
     /* Gallery Stuff */
