@@ -27,7 +27,7 @@ body {
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.45);
 }
 
-.header {
+header {
 	position:relative;
 	width:960px;
 	height:100px;
@@ -256,13 +256,13 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.footer {
+footer {
 	position:relative;
 	height:30px;
 	background:rgba(0, 167, 255, 0.86);
 }
 
-.footer h5 {
+footer h5 {
 	position: absolute;
 	top: 8px;
 	left: 7px;
@@ -271,7 +271,7 @@ body {
 	color: rgba(0,0,0,0.8);
 }
 
-.footer a {
+footer a {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
