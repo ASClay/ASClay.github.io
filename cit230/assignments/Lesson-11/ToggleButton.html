@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://www.bradonline.net/jquery-tutorial-assignment/toggleButtonBegin.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>ToggleButton</title>
+	<link rel="stylesheet" href="./ToggleButton_files/toggleBtn.css">
+	<!-- <script src="js/jquery-2.2.1.min.js"></script> -->
+</head>
+
+<body>
+	<div class="container">
+		<a href="http://www.bradonline.net/jquery-tutorial-assignment/toggleButtonBegin.htm#" class="toggleBtn">Navigation</a>
+		<a href="http://www.bradonline.net/jquery-tutorial-assignment/toggleButtonBegin.htm#" class="toggleBtn">Fuel Monitor</a>
+		<a href="http://www.bradonline.net/jquery-tutorial-assignment/toggleButtonBegin.htm#" class="toggleBtn">Battery Monitor</a>
+	</div>
+    <script src="./ToggleButton_files/jquery-2.2.1.min.js.download"></script>
+    <script>
+		$(function () {
+			// All jQuery code goes here
+            $('.toggleBtn').click( function(){
+                $(this).toggleClass("toggleOn");
+            } );
+            
+    })
+    </script>
+
+
+
+</body></html>

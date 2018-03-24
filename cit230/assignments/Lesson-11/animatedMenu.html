@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://www.bradonline.net/jquery-tutorial-assignment/animatedMenuBegin.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Animated Menu</title>
+	<link rel="stylesheet" href="./Animated Menu_files/animatedMenu.css">
+	<!-- <script src="js/jquery-2.2.1.min.js"></script> -->
+</head>
+<body>
+	<ul class="navigation">
+		<li>About Us</li>
+		<li>Services</li>
+		<li>Catalog</li>
+		<li>Blog</li>
+		<li>Contact</li>
+	</ul>
+    <script src="./Animated Menu_files/jquery-2.2.1.min.js.download"></script>
+    <script>
+		$(function () {
+			// All jQuery code goes here
+            $('.navigation > li').hover(function(){
+                // This code executes when the mouse pointer is over the list item
+                
+                $(this).addClass('openSesame');
+                
+            }, function(){
+                // This code executes when the mouse pointer leaves the list item
+                
+                $(this).removeClass('openSesame');
+                
+            });
+            
+    })
+    </script>
+
+
+</body></html>
