@@ -169,6 +169,11 @@ article img {
 
 
 /* sales stuff */
+button{
+    float: right;
+    color: red;
+}
+
 
 .pictures {
     display: grid;
@@ -180,33 +185,39 @@ article img {
     margin-bottom: 10px;
     color: black;
     font-size: .8rem;
-    border: 1px solid #dddddd;
+   
     text-align: left;
     padding: 5px;
 }
 .one {
-  grid-column: 1;
-  grid-row: 1;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 1;
 }
 .two { 
-  grid-column: 1;
-  grid-row: 2;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 2;
 }
 .three {
-  grid-column: 1;
-  grid-row: 3;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 3;
 }
 .four {
-  grid-column: 1;
-  grid-row: 4;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 4;
 }
 .five {
-  grid-column: 1;
-  grid-row: 5;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 5;
 }
 .six {
-  grid-column: 1;
-  grid-row: 6;
+    border: 2px solid #dddddd;
+    grid-column: 1;
+    grid-row: 6;
 }
 
 
@@ -236,8 +247,8 @@ article {
   background-color: #dddddd;
 }
 
-#art-img {
-    width: 50%;
+.art-details img {
+    width: 45%;
     padding-right: 10px;
 }
 
@@ -265,8 +276,8 @@ article {
 fieldset {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #eee;
-  border: #3d372d solid 1px;
+  background-color: lightgrey;
+  border: black solid 1px;
 }
 
 label {
@@ -277,15 +288,15 @@ label {
 label span {
   display: block;
   font-size: 0.9em;
-  color: #450015;
+  color: black;
   padding-top: 0.9em;
   padding-bottom: 0.2em;
 }
 
 label input, label select,
 label textarea {
-  background-color: #f4f2ef;
-  color: #917a56;
+  background-color: whitesmoke;
+  color: gray;
   height: 2.2em;
   padding: .5em .3em .5em 2em;
   margin-right: -2em;
@@ -293,9 +304,6 @@ label textarea {
   border-radius: 5px;
   font-size: .9em;
   width: 100%;
-  background-image: url(../images/ico_validation.png);
-  background-repeat: no-repeat;
-  background-position: 4px -11px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -316,7 +324,7 @@ label textarea {
   -webkit-appearance: none; /*remove the apple mobile default styling*/
   color: #fff;
   border-radius: 1em;
-  width: 90%;
+  width: 80%;
   max-width: 500px;
   margin-top: .5em;
   margin-bottom: 0;

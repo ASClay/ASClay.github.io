@@ -71,6 +71,10 @@ header .sub {
     }
     
     /* sales Stuff */
+button{
+    float: right;
+    color: red;
+}
 
 .pictures {
     
@@ -81,7 +85,6 @@ header .sub {
     margin: auto;
     margin-top: 10px;    
     margin-bottom: 10px;
-    border: 1px solid #dddddd;
     text-align: left;
     padding: 5px;
 }
